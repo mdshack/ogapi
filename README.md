@@ -66,4 +66,6 @@ curl http://0.0.0.0:3000/?url=https://www.theverge.com/editorial/626356/galaxy-z
 ### On Fly.io
 
 1. Setup [Fly.io CLI](https://fly.io/docs/flyctl/)
-2. Run `fly launch -i mdshack/ogapi:latest`
+2. Navigate to a directory where you want to save your `fly.toml` (config for your deployed application)
+3. Run `fly launch -i mdshack/ogapi:latest --vm-memory 256mb --internal-port 3000`
+4. Follow the CLI prompts to finish setup
