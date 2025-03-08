@@ -6,15 +6,26 @@ This project is very much a _toy-project_, not hardened for production use. Plea
 
 ## Usage
 
+### Docker
+
+
+1. Start the server using: `docker run -it -p 3000:3000 mdshack/ogapi:latest`
+
+```sh
+curl http://127.0.0.1:3000/?url=https://www.theverge.com/editorial/626356/galaxy-z-flip-folding-phone-didnt-last-two-years-battery | jq
+```
+
+### From Source
+
 1. Pull down the repository and navigate to the folder
 2. Start the server using `cargo run` 
 3. Make a request to the server, adding a `url` query param (the URL you wish to get OpenGraph for)
 
-**Example**
-
 ```sh
 curl http://0.0.0.0:3000/?url=https://www.theverge.com/editorial/626356/galaxy-z-flip-folding-phone-didnt-last-two-years-battery | jq
 ```
+
+### Example Response
 
 ```json
 {
