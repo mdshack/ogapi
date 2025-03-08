@@ -60,3 +60,10 @@ curl http://0.0.0.0:3000/?url=https://www.theverge.com/editorial/626356/galaxy-z
   "og:audio:type": ""
 }
 ```
+
+## Deployment
+
+### On Fly.io
+
+1. Setup [Fly.io CLI](https://fly.io/docs/flyctl/)
+2. Run `fly launch -i mdshack/ogapi:latest`
